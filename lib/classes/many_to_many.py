@@ -95,18 +95,18 @@ class Magazine:
         for article in self.articles():
             author_counts[article.author] = author_counts.get(article.author, 0) + 1
         return [author for author, count in author_counts.items() if count > 2]
+##code ends here time for execution##
 
 
-# === TEST EXECUTION ===
 # Creating instances
-author1 = Author("John Doe")
-magazine1 = Magazine("Tech Today", "Technology")
+author1 = Author("Peter")
+magazine1 = Magazine("Daily Today", "Technology")
 
 # Author writes an article
-article1 = author1.add_article(magazine1, "The Future of AI")
-article2 = author1.add_article(magazine1, "Cybersecurity Trends")
+article1 = author1.add_article(magazine1, "The Future of us")
+article2 = author1.add_article(magazine1, "Laptops renewed")
 
 # Checking relationships
-print(author1.articles())  # Should print a list of John's articles
-print(author1.magazines())  # Should print a list of magazines John has written for
-print(author1.topic_areas())  # Should print ['Technology']
+print(author1.articles())  
+print(author1.magazines())  
+print(author1.topic_areas())  
